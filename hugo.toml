@@ -3,6 +3,7 @@ locale = 'en-us'
 title = "Bobby's Headspace"
 
 theme = "re-terminal"
+enableRobotsTXT = true
 
 [params]
 	themeColor = "green"
@@ -62,3 +63,12 @@ theme = "re-terminal"
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[outputFormats.PagesTxt]
+	mediaType = "text/plain"
+	baseName = "pages"
+	isPlainText = true
+	notAlternative = true
+
+[outputs]
+	home = ["HTML", "PagesTxt"]
